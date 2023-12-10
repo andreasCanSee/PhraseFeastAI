@@ -6,6 +6,8 @@ export default {
       colors: {
         mainBrown: '#551100',
         mainYellow: '#FFD268',
+        secondaryYellow: '#F6AF36',
+        mainOrange: '#F06927',
       }
     },
   },

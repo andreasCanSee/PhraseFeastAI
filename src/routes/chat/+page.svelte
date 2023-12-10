@@ -1,23 +1,21 @@
 <script>
-    import Banner from '$lib/Banner.svelte';
+    //import Banner from '$lib/Banner.svelte';
     import { selectedLanguage } from '../../stores';
 
     let greeting;
     switch ($selectedLanguage) {
-        case 'spanish':
+        case 'Spanish':
             greeting = '¡Hola!';
             break;
-        case 'german':
+        case 'German':
             greeting = 'Hallo!';
             break;
-        case 'french':
+        case 'French':
             greeting = 'Bonjour!';
             break;
         default:
             greeting = 'Hello!';
     }
 </script>
-
-<Banner />
 
 <h2>{greeting}</h2>
