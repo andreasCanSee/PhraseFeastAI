@@ -1,5 +1,5 @@
 <script>
-    //import Banner from '$lib/Banner.svelte';
+    import Banner from '$lib/Banner.svelte';
     import { selectedLanguage } from '../../stores';
 
     let greeting;
@@ -17,5 +17,7 @@
             greeting = 'Hello!';
     }
 </script>
+<Banner/>
+
 
 <h2>{greeting}</h2>

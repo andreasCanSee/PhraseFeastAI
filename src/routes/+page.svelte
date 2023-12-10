@@ -1,5 +1,5 @@
 <script>
-    //import Banner from '$lib/Banner.svelte';
+    import Banner from '$lib/Banner.svelte';
     import { goto } from '$app/navigation';
     import { selectedLanguage } from '../stores.js';
 
@@ -15,10 +15,8 @@
 
 </script>
 
-<div class="flex items-center justify-center bg-mainYellow p-6 shadow-xl">
-    <h1 class="font-bold text-4xl md:text-6xl mr-4">PhraseFeast</h1>
-    <img src="/icon.png" alt="" class="w-12 h-12 md:w-20 md:h-20">
-</div>
+<Banner/>
+
 
 <main class="mx-auto max-w-2xl px-4 min-h-[80vh] flex items-center"> 
     <div class="bg-mainYellow p-8 shadow-2xl rounded-xl w-full">
