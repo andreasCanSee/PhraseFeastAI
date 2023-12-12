@@ -5,12 +5,12 @@
 /* Global Styles */
 @layer base {
     body {
-      color: theme('colors.mainBrown'); /* Verwendung Ihrer benutzerdefinierten Farbe */
+      color: theme('colors.mainBrown'); 
     }
   }
 
-  html, body{
+  html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    height: 100%;
-}
+    overflow: hidden; }

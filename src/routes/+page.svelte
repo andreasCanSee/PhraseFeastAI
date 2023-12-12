@@ -4,13 +4,17 @@
     import { selectedLanguage } from '../stores.js';
 
     const languages = [
-        { name: 'Spanish', flag: '🇪🇸' },
-        { name: 'French', flag: '🇫🇷' },
-        { name: 'German', flag: '🇩🇪' }
+        { name: 'spanish', flag: '🇪🇸' },
+        { name: 'french', flag: '🇫🇷' },
+        { name: 'german', flag: '🇩🇪' }
     ]
 
     function start(){
         goto('/chat');
+    }
+
+    function capitalizeFirstLetter(string){
+        return string.charAt(0).toUpperCase() + string.slice(1);
     }
 
 </script>
@@ -26,7 +30,7 @@
        {#each languages as language}
         <label class="flex items-center my-2">
             <input type="radio" bind:group={$selectedLanguage} value={language.name} class="">
-            <span class="ml-2 text-l md:text-xl font-bold">{language.name} {language.flag}</span>
+            <span class="ml-2 text-l md:text-xl font-bold">{capitalizeFirstLetter(language.name)} {language.flag}</span>
         </label>
         {/each}
     </div>
